@@ -14,7 +14,7 @@ import com.willy.ratingbar.RotationRatingBar
 
 class StoreAdapter(
     private val mContext: Context,
-    resId: Int,
+    private val resId: Int,
     private val mStoreList: ArrayList<StoreData>
 ) : ArrayAdapter<StoreData>(mContext, resId, mStoreList) {
 
@@ -24,7 +24,7 @@ class StoreAdapter(
 
         var tempRow = convertView
         if (tempRow == null) {
-            tempRow = LayoutInflater.from(mContext).inflate(R.layout.store_order_item, null)
+            tempRow = LayoutInflater.from(mContext).inflate(resId, null)
         }
 
         val row = tempRow!!
