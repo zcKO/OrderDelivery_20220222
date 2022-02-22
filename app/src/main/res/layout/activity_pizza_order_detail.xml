@@ -9,13 +9,15 @@
     tools:context=".detail.PizzaOrderDetailActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/storeDetailLogoImg"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
+        app:civ_border_width="2dp"
         tools:src="@mipmap/ic_launcher" />
 
     <View
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/black" />
@@ -30,6 +32,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
+        android:id="@+id/storeDetailName"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -94,7 +97,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 

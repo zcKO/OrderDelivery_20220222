@@ -1,5 +1,6 @@
 package com.jc.orderdelivery_20220222.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +9,9 @@ import androidx.fragment.app.Fragment
 import com.jc.orderdelivery_20220222.R
 import com.jc.orderdelivery_20220222.StoreData
 import com.jc.orderdelivery_20220222.adapters.StoreAdapter
+import com.jc.orderdelivery_20220222.detail.PizzaOrderDetailActivity
 import com.jc.orderdelivery_20220222.global.GlobalCode
+import com.jc.orderdelivery_20220222.global.GlobalCode.Companion.PIZZA_DATA
 import kotlinx.android.synthetic.main.fragment_pizza_order.*
 
 class PizzaOrderFragment: Fragment() {
@@ -28,7 +31,7 @@ class PizzaOrderFragment: Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         initViews()
-
+        setEvents()
     }
 
     private fun initViews() {
@@ -47,6 +50,21 @@ class PizzaOrderFragment: Fragment() {
         storeList.add(StoreData("미스터피자", 5.0f, "1577-007", GlobalCode.MRPIZZA_LOGO_URL))
 
         return storeList
+
+    }
+
+    private fun setEvents() {
+
+        pizzaStoreListView.setOnItemClickListener { parent, view, position, id ->
+
+            val clickedData = storeList[position]
+
+            val intent = Intent(requireContext(), PizzaOrderDetailActivity::class.java).apply {
+                putExtra(PIZZA_DATA, clickedData)
+            }
+            startActivity(intent)
+
+        }
 
     }
 
