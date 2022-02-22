@@ -3,22 +3,28 @@ package com.jc.orderdelivery_20220222.adapters
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.jc.orderdelivery_20220222.fragments.MyProfileFragment
+import com.jc.orderdelivery_20220222.fragments.PizzaOrderFragment
 
 class MainViewPagerAdapter(
     fm: FragmentManager,
     private val pager: Int = 3
-): FragmentPagerAdapter(fm) {
+) : FragmentPagerAdapter(fm) {
 
     override fun getPageTitle(position: Int): CharSequence? {
-        TODO("포지션에 따라 페이저의 제목 달아주기")
+        return when (position) {
+            0 -> "피자 주문"
+            else -> "내 정보 설정"
+        }
     }
 
     override fun getCount(): Int = pager
 
     override fun getItem(position: Int): Fragment {
-        TODO("포지션에 따라 프레그먼트 보여주기")
-
+        return when (position) {
+            0 -> PizzaOrderFragment()
+            else -> MyProfileFragment()
+        }
     }
-
 
 }
