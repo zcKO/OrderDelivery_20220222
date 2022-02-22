@@ -2,11 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     android:orientation="vertical">
 
     <TextView
+        android:text="닉네임"
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/inputNickNameEditText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="내 정보 테스트 화면"/>
+        android:layout_marginTop="5dp"
+        android:hint="새로 사용할 닉네임"/>
+
+    <Button
+        android:id="@+id/saveNicknameButton"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="저장하기"/>
 
 </LinearLayout>
