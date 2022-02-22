@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.jc.orderdelivery_20220222.adapters.MainViewPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_pizza_order.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         viewPagerAdapter = MainViewPagerAdapter(supportFragmentManager)
         mainViewPager.adapter = viewPagerAdapter
+        mainTabLayout.setupWithViewPager(mainViewPager)
 
     }
 

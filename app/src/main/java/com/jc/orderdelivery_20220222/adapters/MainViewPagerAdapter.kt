@@ -8,7 +8,7 @@ import com.jc.orderdelivery_20220222.fragments.PizzaOrderFragment
 
 class MainViewPagerAdapter(
     fm: FragmentManager,
-    private val pager: Int = 3
+    private val pager: Int = 2
 ) : FragmentPagerAdapter(fm) {
 
     override fun getPageTitle(position: Int): CharSequence? {
