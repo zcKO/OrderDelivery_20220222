@@ -14,13 +14,8 @@
         android:theme="@style/Theme.OrderDelivery_20220222"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".detail.ChangeNicknameActivity"
-            android:exported="false" />
-        <activity
-            android:name=".detail.PizzaOrderDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".splash.SplashActivity"
+            android:theme="@style/Theme.OrderDelivery.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +23,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".detail.ChangeNicknameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detail.PizzaOrderDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

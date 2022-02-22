@@ -56,4 +56,7 @@ dependencies {
     // Normal
     implementation 'io.github.ParkSangGwon:tedpermission-normal:3.3.0'
 
+    // lottie
+    implementation 'com.airbnb.android:lottie:4.2.2'
+
 }
