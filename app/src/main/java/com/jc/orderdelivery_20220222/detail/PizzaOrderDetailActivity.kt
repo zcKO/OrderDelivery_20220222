@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide
 import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.normal.TedPermission
 import com.jc.orderdelivery_20220222.R
-import com.jc.orderdelivery_20220222.StoreData
+import com.jc.orderdelivery_20220222.datas.StoreData
 import com.jc.orderdelivery_20220222.global.GlobalCode.Companion.PIZZA_DATA
 import kotlinx.android.synthetic.main.activity_pizza_order_detail.*
 

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.jc.orderdelivery_20220222.R
-import com.jc.orderdelivery_20220222.StoreData
+import com.jc.orderdelivery_20220222.datas.StoreData
 import com.jc.orderdelivery_20220222.adapters.StoreAdapter
 import com.jc.orderdelivery_20220222.detail.PizzaOrderDetailActivity
 import com.jc.orderdelivery_20220222.global.GlobalCode

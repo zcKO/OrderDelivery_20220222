@@ -1,4 +1,4 @@
-package com.jc.orderdelivery_20220222
+package com.jc.orderdelivery_20220222.datas
 
 import java.io.Serializable
 

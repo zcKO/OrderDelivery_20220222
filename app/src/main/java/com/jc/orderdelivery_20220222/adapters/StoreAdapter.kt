@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.jc.orderdelivery_20220222.R
-import com.jc.orderdelivery_20220222.StoreData
+import com.jc.orderdelivery_20220222.datas.StoreData
 import com.willy.ratingbar.RotationRatingBar
 
 class StoreAdapter(
