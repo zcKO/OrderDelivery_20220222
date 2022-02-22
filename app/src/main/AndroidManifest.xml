@@ -14,6 +14,9 @@
         android:theme="@style/Theme.OrderDelivery_20220222"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".detail.ChangeNicknameActivity"
+            android:exported="false" />
+        <activity
             android:name=".detail.PizzaOrderDetailActivity"
             android:exported="false" />
         <activity
