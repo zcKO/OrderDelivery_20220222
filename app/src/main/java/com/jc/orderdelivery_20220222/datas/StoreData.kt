@@ -6,5 +6,6 @@ class StoreData(
     val storeName: String,
     val storeRating: Float,
     val storeNumber: String,
-    val storeLogoImg: String
+    val storeLogoImg: String,
+    val storeHomeUri: String
 ) : Serializable

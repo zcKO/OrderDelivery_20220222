@@ -8,6 +8,12 @@ class GlobalCode {
         val DOMINOS_LOGO_URL = "https://pbs.twimg.com/profile_images/1098371010548555776/trCrCTDN_400x400.png"
         val MRPIZZA_LOGO_URL = "https://post-phinf.pstatic.net/MjAxODEyMDVfMzYg/MDAxNTQzOTYxOTA4NjM3.8gsStnhxz7eEc9zpt5nmSRZmI-Pzpl4NJvHYU-Dlgmcg.7Vpgk0lopJ5GoTav3CUDqmXi2-_67S5AXD0AGbbR6J4g.JPEG/IMG_1641.jpg?type=w1200"
 
+        val PIZZHUT_URL = "https://www.pizzahut.co.kr/main"
+        val PAPAJOHNS_URL = "https://pji.co.kr"
+        val DOMINOS_URL =  "https://www.mrpizza.co.kr"
+        val MRPIZZA_URL = "https://web.dominos.co.kr/main"
+
+
         val PIZZA_DATA = "pizza_data"
         val MY_NICKNAME = "nickname"
         val REQ_MY_NICKNAME_CHANGE = 1000

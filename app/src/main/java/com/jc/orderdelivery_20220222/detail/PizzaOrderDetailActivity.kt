@@ -11,6 +11,7 @@ import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.normal.TedPermission
 import com.jc.orderdelivery_20220222.R
 import com.jc.orderdelivery_20220222.datas.StoreData
+import com.jc.orderdelivery_20220222.global.GlobalCode
 import com.jc.orderdelivery_20220222.global.GlobalCode.Companion.PIZZA_DATA
 import kotlinx.android.synthetic.main.activity_pizza_order_detail.*
 
@@ -70,6 +71,14 @@ class PizzaOrderDetailActivity : AppCompatActivity() {
                 .setPermissionListener(permissionListener)
                 .setPermissions(Manifest.permission.CALL_PHONE)
                 .check()
+
+        }
+
+        homePageButton.setOnClickListener {
+
+            val homeUri = Uri.parse(data.storeHomeUri)
+            val homeIntent = Intent(Intent.ACTION_VIEW, homeUri)
+            startActivity(homeIntent)
 
         }
 

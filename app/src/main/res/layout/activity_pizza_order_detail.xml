@@ -17,29 +17,29 @@
         tools:src="@mipmap/ic_launcher" />
 
     <View
-        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_marginTop="30dp"
         android:background="@color/black" />
 
     <TextView
-        android:text="가게 이름"
-        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
-        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="가게 이름"
         android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_height="wrap_content" />
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/storeDetailName"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="피자헛"/>
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="피자헛" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,51 +48,51 @@
         android:orientation="vertical">
 
         <TextView
-            android:text="평점"
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
-            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="평점"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_height="wrap_content" />
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
             android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <com.willy.ratingbar.RotationRatingBar
                 android:id="@+id/storeDetailRatingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srb_stepSize="0.5"
                 app:srb_isIndicator="true"
-                app:srb_starWidth="20dp"
                 app:srb_starHeight="20dp"
-                app:srb_starPadding="2dp"/>
+                app:srb_starPadding="2dp"
+                app:srb_starWidth="20dp"
+                app:srb_stepSize="0.5" />
 
             <TextView
                 android:id="@+id/storeDetailRatingScore"
-                tools:text="(3.5)"
-                android:layout_marginStart="10dp"
                 android:layout_width="wrap_content"
-                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:textColor="@color/black"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_height="wrap_content" />
+                tools:text="(3.5)" />
 
         </LinearLayout>
 
         <TextView
-            android:text="대표 전화번호"
-            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
-            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="대표 전화번호"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_height="wrap_content" />
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -102,33 +102,42 @@
 
             <TextView
                 android:id="@+id/storeDetailNumber"
-                tools:text="1577-3082"
                 android:layout_width="wrap_content"
-                android:textSize="20sp"
+                android:layout_height="wrap_content"
                 android:textColor="@color/black"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_height="wrap_content" />
+                tools:text="1577-3082" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
             <Button
                 android:id="@+id/orderCallButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="전화 주문"/>
+                android:text="전화 주문" />
 
         </LinearLayout>
 
 
     </LinearLayout>
 
-    <View
+    <Button
+        android:id="@+id/homePageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:text="홈페이지 이동"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_marginTop="20dp"
         android:background="@color/black" />
 
 </LinearLayout>

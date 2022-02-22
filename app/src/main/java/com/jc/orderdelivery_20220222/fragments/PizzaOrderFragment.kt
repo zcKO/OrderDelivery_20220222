@@ -44,10 +44,10 @@ class PizzaOrderFragment: Fragment() {
 
     private fun initStoreData(): ArrayList<StoreData> {
 
-        storeList.add(StoreData("피자헛", 3.5f, "1588-5588", GlobalCode.PIZZHUT_LOGO_URL))
-        storeList.add(StoreData("파파존스", 4.5f, "1577-8080", GlobalCode.PAPAJOHNS_LOGO_URL))
-        storeList.add(StoreData("도미노피자", 2.5f, "1577-3082", GlobalCode.DOMINOS_LOGO_URL))
-        storeList.add(StoreData("미스터피자", 5.0f, "1577-007", GlobalCode.MRPIZZA_LOGO_URL))
+        storeList.add(StoreData("피자헛", 3.5f, "1588-5588", GlobalCode.PIZZHUT_LOGO_URL, GlobalCode.PIZZHUT_URL))
+        storeList.add(StoreData("파파존스", 4.5f, "1577-8080", GlobalCode.PAPAJOHNS_LOGO_URL, GlobalCode.PAPAJOHNS_URL))
+        storeList.add(StoreData("도미노피자", 2.5f, "1577-3082", GlobalCode.DOMINOS_LOGO_URL, GlobalCode.DOMINOS_URL))
+        storeList.add(StoreData("미스터피자", 5.0f, "1577-007", GlobalCode.MRPIZZA_LOGO_URL, GlobalCode.MRPIZZA_URL))
 
         return storeList
 
