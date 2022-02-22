@@ -5,14 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.ImageView
+import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.jc.orderdelivery_20220222.R
 import com.jc.orderdelivery_20220222.StoreData
+import com.willy.ratingbar.RotationRatingBar
 
 class StoreAdapter(
     private val mContext: Context,
     resId: Int,
     private val mStoreList: ArrayList<StoreData>
-): ArrayAdapter<StoreData>(mContext, resId, mStoreList) {
+) : ArrayAdapter<StoreData>(mContext, resId, mStoreList) {
 
     lateinit var row: View
 
@@ -23,11 +27,28 @@ class StoreAdapter(
             tempRow = LayoutInflater.from(mContext).inflate(R.layout.store_order_item, null)
         }
 
-        tempRow?.let {
-            row = it
-        }
+        val row = tempRow!!
+        setValues(row, position)
 
         return row
+
+    }
+
+    private fun setValues(row: View, position: Int) {
+
+        val data = mStoreList[position]
+
+        val storeLogoImg = row.findViewById<ImageView>(R.id.storeLogoImageView)
+        val storeName = row.findViewById<TextView>(R.id.storeNameTextView)
+        val storeRating = row.findViewById<RotationRatingBar>(R.id.storeRatingBar)
+
+        Glide.with(mContext)
+            .load(data.storeLogoImg)
+            .into(storeLogoImg)
+
+        storeName.text = data.storeName
+        storeRating.rating = data.storeRating
+
 
     }
 
